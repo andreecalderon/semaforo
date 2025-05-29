@@ -1,4 +1,7 @@
-import { contenedor } from "./semaforo/redLight.js";
+import { contenedor, prenderLuz } from "./semaforo.js";
 
-const root = document.getElementById("root");
-root.appendChild(contenedor);
+document.getElementById("root").appendChild(contenedor);
+
+setTimeout(() => {
+  prenderLuz("verde");
+}, 2000);

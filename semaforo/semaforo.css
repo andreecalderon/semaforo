@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  cursor: pointer; /* para que se note que son interactivos */
+  cursor: pointer;
 }
 
 .luz {
