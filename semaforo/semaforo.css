@@ -1,0 +1,59 @@
+.contenedor_semaforo {
+  width: 180px;
+  background: #222;
+  padding: 30px;
+  border-radius: 40px;
+  margin: 50px auto;
+  box-shadow:
+    0 0 30px rgba(0,0,0,0.8),
+    inset 0 0 25px rgba(255,255,255,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer; /* para que se note que son interactivos */
+}
+
+.luz {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #3a3a3a;
+  box-shadow:
+    inset 0 0 25px rgba(0,0,0,0.7),
+    0 0 15px rgba(0,0,0,0.6);
+  transition: background-color 0.4s, box-shadow 0.4s;
+}
+
+.luz.roja {
+  background-color: #3a0000;
+}
+
+.luz.amarilla {
+  background-color: #3a3a00;
+}
+
+.luz.verde {
+  background-color: #003a00;
+}
+
+.luz.encendida.roja {
+  background-color: red;
+  box-shadow:
+    0 0 30px red,
+    inset 0 0 50px #ff6666;
+}
+
+.luz.encendida.amarilla {
+  background-color: yellow;
+  box-shadow:
+    0 0 30px yellow,
+    inset 0 0 50px #ffff99;
+}
+
+.luz.encendida.verde {
+  background-color: #00cc00;
+  box-shadow:
+    0 0 30px #00cc00,
+    inset 0 0 50px #99ff99;
+}
