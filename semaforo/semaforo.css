@@ -1,59 +1,56 @@
-.contenedor_semaforo {
-  width: 180px;
-  background: #222;
-  padding: 30px;
-  border-radius: 40px;
-  margin: 50px auto;
-  box-shadow:
-    0 0 30px rgba(0,0,0,0.8),
-    inset 0 0 25px rgba(255,255,255,0.15);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  cursor: pointer;
-}
+body {
+      margin: 0;
+      background: #1e1e1e;
+      font-family: sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-.luz {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-color: #3a3a3a;
-  box-shadow:
-    inset 0 0 25px rgba(0,0,0,0.7),
-    0 0 15px rgba(0,0,0,0.6);
-  transition: background-color 0.4s, box-shadow 0.4s;
-}
+    .contenedor_semaforo {
+      background: #222;
+      padding: 20px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+      border: 4px solid #555;
+      width: 120px;
+    }
 
-.luz.roja {
-  background-color: #3a0000;
-}
+    .luz {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #444;
+      cursor: pointer;
+      transition: background-color 0.4s, box-shadow 0.4s;
+      box-shadow: inset 0 0 10px #000;
+    }
 
-.luz.amarilla {
-  background-color: #3a3a00;
-}
+    .roja.encendida {
+      background-color: red;
+      box-shadow: 0 0 25px red;
+    }
 
-.luz.verde {
-  background-color: #003a00;
-}
+    .amarilla.encendida {
+      background-color: yellow;
+      box-shadow: 0 0 25px yellow;
+    }
 
-.luz.encendida.roja {
-  background-color: red;
-  box-shadow:
-    0 0 30px red,
-    inset 0 0 50px #ff6666;
-}
+    .verde.encendida {
+      background-color: limegreen;
+      box-shadow: 0 0 25px limegreen;
+    }
 
-.luz.encendida.amarilla {
-  background-color: yellow;
-  box-shadow:
-    0 0 30px yellow,
-    inset 0 0 50px #ffff99;
-}
-
-.luz.encendida.verde {
-  background-color: #00cc00;
-  box-shadow:
-    0 0 30px #00cc00,
-    inset 0 0 50px #99ff99;
-}
+    .titulo {
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ccc;
+      text-align: center;
+    }
