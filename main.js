@@ -3,5 +3,5 @@ import { contenedor, prenderLuz } from "./semaforo.js";
 document.getElementById("root").appendChild(contenedor);
 
 setTimeout(() => {
-  prenderLuz("verde");
+  prenderLuz("roja");
 }, 2000);

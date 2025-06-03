@@ -11,3 +11,4 @@ function apagarAmarilla() {
 }
 
 export { luzAmarilla, prenderAmarilla, apagarAmarilla };
+  
